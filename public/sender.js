@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function sendFile(file, peer, receiverId) {
-        const chunkSize = 64 * 1024;
+        const chunkSize = 128 * 1024;
         const totalChunks = Math.ceil(file.size / chunkSize);
 
         const peerData = peers.get(receiverId);
